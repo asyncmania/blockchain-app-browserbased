@@ -1,0 +1,18 @@
+{
+  "name": "blockchain-node-browser",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Josiah Ilesanmi <ilesanmi.josiah@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "serve",
+    "compileDeploy": "tsc && npm run deploy",
+    "deploy": "copyfiles -f src/browser/*.html scr/broswer/*.css dist"
+  },
+  "devDependencies": {
+    "@types/node": "14.14.35",
+    "copyfiles": "2.4.1",
+    "serve": "11.3.2",
+    "typescript": "4.2.3"
+  }
+}
